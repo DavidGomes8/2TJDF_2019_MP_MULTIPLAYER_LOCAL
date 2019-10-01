@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 587844937}
   - component: {fileID: 587844936}
   - component: {fileID: 587844935}
+  - component: {fileID: 587844939}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Untagged
@@ -262,7 +263,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 41fa2c1259b683e49a72bb2f4b184ae7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -305,6 +306,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &587844939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587844934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf1583c1affe494bab19e24349c1d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +588,7 @@ GameObject:
   - component: {fileID: 1393782204}
   - component: {fileID: 1393782203}
   - component: {fileID: 1393782202}
+  - component: {fileID: 1393782206}
   m_Layer: 0
   m_Name: Player (2)
   m_TagString: Untagged
@@ -612,7 +627,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 200f60a1a2c93e14fb76404fdc37d46c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -655,3 +670,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1393782206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393782201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf1583c1affe494bab19e24349c1d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: 1

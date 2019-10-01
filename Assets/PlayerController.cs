@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum PLAYERS
     {
-        
+        PLAYER_1,
+        PLAYER_2
     }
 
-    // Update is called once per frame
-    void Update()
+    public PLAYERS player;
+
+    private float speed = 2f;
+    private float rotation = 100f;
+
+    private void Start()
     {
-        
+    }
+
+    private void Update()
+    {
+        float h = 0;
+        float v = 0;
+
+        if (player == PLAYERS.PLAYER_1)
+        {
+            h = Input.GetAxis("Horizontal");
+            v = Input.GetAxis("Vertical");
+        }
+        else if (player == PLAYERS.PLAYER_2)
+        {
+            h = Input.GetAxis("Horizontal2");
+            v = Input.GetAxis("Vertical2");
+        }
+
+        transform.Translate(Vector3.forward * (v * speed * Time.deltaTime));
+        transform.Rotate(Vector3.up * (h * rotation * Time.deltaTime));
     }
 }
